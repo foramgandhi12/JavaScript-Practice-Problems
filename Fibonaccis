@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fibonaccis</title>
+
+<script>
+
+function fibonaccis(first,second,numtodisplay)
+
+{
+var sum=0;
+first=parseInt(first)
+second=parseInt(second)
+
+for (var i=first;i<=numtodisplay;i++)
+{
+sum=first+second
+first=second
+second=sum
+document.write(sum+"<br>")
+}
+}
+
+fibonaccis(1,1,5)
+
+</script>
+
+</body>
+</html>
+</head>
