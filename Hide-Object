@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Statistics</title>
+<script>
+
+function showtextbox()
+{
+document.getElementById("ics2o0").style.visibility="hidden"
+}
+
+document.write("Name: ");
+
+</script>
+
+<body>
+
+<input type="text" id="ics2o0">
+
+<br>
+<br>
+
+<input type="button" value="Click" id="bt1" onclick="showtextbox ()">
+
+</body>
+      
+</html>
+</head>
