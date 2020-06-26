@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deal or No Deal</title>
+<script>
+
+function dealornodeal(s)
+{
+  var q=s.split(",");
+  var value=parseInt(q[q.length-1]);
+  var length=q.length-1;
+  var sum=0;
+  
+  var array=[100,500,1000,5000,10000,25000,50000,100000,500000,1000000];
+  
+  for (var i=0; i<=q.length-2; i++)
+    {    
+      var a=parseInt(q[i])-1
+      sum=sum+array[a];
+    }
+  
+  var average=sum/length;
+  
+  if (average>value)
+    {
+      document.write("DEAL");
+    } 
+      else
+         {
+           document.write("NO DEAL");
+         }
+}
+
+dealornodeal("3,8,198000");
+
+</script>
+
+</body>
+</html>
+</head>
