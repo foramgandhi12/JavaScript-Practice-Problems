@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Statistics</title>
+<script>
+
+//Programmer Name: Foram Gandhi//
+
+var a=[1,-1,0,-7,8,2];
+ 
+function arraystatistics(a)
+{
+document.write("Number of elements = "+(a.length)+"<br>");
+
+ {
+ var min=9999999;
+ for (var i=0; i<=a.length-1; i++)
+  {
+  if (a[i]<min)
+  min=a[i];
+  }
+  document.write("Minimum value = "+min+"<br>");
+  
+   {
+   var max=-9999999;
+   for (var i=0; i<=a.length-1; i++)
+    {
+    if (a[i]>max)
+    max=a[i];
+    }
+    document.write("Maximum value = "+max+"<br>");
+        
+     {
+     var sum=0;
+     for (var i=0; i<=a.length-1; i++)
+      {
+      sum=sum+a[i];
+      }
+      document.write("Average = "+(sum/a.length)+"<br>");
+      document.write("Sum of all elements = "+sum+"<br>");
+       
+       {
+       var power=0;
+       for (var i=0; i<=a.length-1; i++)
+        {
+        power=power+(Math.pow(a[i],2));
+        }
+        document.write("Sum of the squares of elements = "+power+"<br>");
+        }
+      }
+    }
+  }
+}
+ 
+arraystatistics(a);
+ 
+</script>
+      
+</html>
+</head>
