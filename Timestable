@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timestable</title>
+<script>
+
+function timestable(a,b)
+
+{
+
+for(var i=1;i<=a;i++)
+    {
+    for (var j=1;j<=b;j++)
+
+document.write(i+" times "+j+" = "+(j*i)+"."+"<br>")
+
+}
+}
+
+timestable(12,6)
+
+</script>
+</html>
+</head>
