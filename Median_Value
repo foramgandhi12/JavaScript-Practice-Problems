@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Median</title>
+<script>
+
+function median(s)
+{ 
+  var s=s.split(", ");
+  if (s.length%2!=0)
+    {
+      var a=(s.length/2)*10;
+      var b=(a-5)/10;
+      return s[b];
+    }
+      else
+        {
+          var c=s.length/2;
+          var d=s[c];
+          var e=s[c-1];
+          var f=(parseInt(d)+parseInt(e))/2;
+          return f;
+        }
+}
+
+document.write(median("1, 2, 3, 40, 5, 6, 7, 8"));
+
+</script>
+
+</body>
+</html>
+</head>
