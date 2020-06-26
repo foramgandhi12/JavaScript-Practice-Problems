@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Largest Number</title>
+<script type='text/javascript'>
+
+function largestnum(x,y,z)
+{
+var a=Math.max(x,y,z)
+return "Between " + x + ", " +y+", and "+ z+","+" the largest number is "+a+".";
+}
+document.write(largestnum(10,25,15))
+
+</script>
+</head>
+<body>
+</body>
+</html>
