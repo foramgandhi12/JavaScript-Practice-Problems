@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Array Statistics</title>
+<title>Cursor Detection</title>
 <script>
 
 function setTitle(s)
