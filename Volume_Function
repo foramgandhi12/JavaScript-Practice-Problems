@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volume of Triangular Prism</title>
+
+<script>
+function getrandomnumber(min, max, nothhese)
+{
+    return min+Math.floor((max-min+1)*Math.random());
+}
+
+function roundnumber (total)
+{
+  return Math.round(total*100)/100;
+}
+
+function calculate(b,l,h)
+{
+    return((b*l*h)/2)
+}
+
+function volumetriangularprism(numtodisplay)
+{
+    document.write("Solve the following word problems: (Note: The number in () is the answer to the question.)" + "<br><br>")
+    var num = 1;
+    while(num <= numtodisplay)
+    {
+        var base = getrandomnumber(10,100,"");
+        var length = getrandomnumber(10,100,"");
+        var height = getrandomnumber(10,100,"");
+   
+        document.write(num + ")  Find the volume of a triangular prism with base=" + base +", altitude=" + length+ " and height of " + height+ ". ("+roundnumber(calculate(base,length,height)) +")" + "<br>")
+        num++
+    }
+}
+volumetriangularprism(5);
+
+</script>
+
+</body>
+</html>
+</head>
