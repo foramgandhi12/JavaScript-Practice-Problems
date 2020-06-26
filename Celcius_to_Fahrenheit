@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Celcius to Fahrenheit</title>
+<script type='text/javascript'>
+
+function celsiuscheck()
+{
+var c=document.myform.celsius.value
+
+var cel=parseFloat(c)
+
+var celsiuscal= (9*cel/5)+32
+
+document.getElementById("cmsg").innerHTML=celsiuscal
+}
+
+</script>
+
+<form name="myform">
+
+Celsius:
+
+<input type="text" name="celsius"> </input>
+<input type="button" name="cbutton" value="Convert" onclick="celsiuscheck()"> </input>
+
+<p id="cmsg"> </p>
+<br> <br>
+
+</form>
+
+</html>
+</head>
