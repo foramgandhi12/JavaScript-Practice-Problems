@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reverse Word</title>
+
+<script>
+
+//Programmer Name: Foram Gandhi//
+
+function reverse(s)
+
+{
+
+var m="";
+
+for (var i=s.length-1;i>=0;i--)
+
+m=m+s.charAt(i);
+
+return m;
+
+}
+
+document.write(reverse("Hello"));
+
+</script>
+
+</body>
+</html>
+</head>
