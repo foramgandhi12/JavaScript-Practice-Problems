@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Type your Page Title here.</title>
+<script type='text/javascript'>
+
+var x=10;
+var y=11;
+var z=15;
+
+if (x>y)
+{
+
+if (x>z)
+   {
+    document.write(x+" is the largest number.");
+   }
+
+else
+   {
+    document.write(z+" is the largest number.");
+   }
+
+}
+
+else
+
+{
+if (y>z)
+
+   {
+    document.write(y+" is the largest number.");
+   }
+
+else
+
+   {
+    document.write(z+" is the largest number.");
+   }
+
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
