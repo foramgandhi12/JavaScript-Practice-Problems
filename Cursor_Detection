@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Statistics</title>
+<script>
+
+function setTitle(s)
+
+{
+document.getElementById("Title").innerHTML=s;
+}
+
+</script>
+
+<body>
+
+<input type="button" value="Click on me" onmouseover="setTitle('You are over button');" onmouseout="setTitle('');"
+<br>
+<p id="Title">
+</body>
+</html>
+</head>
