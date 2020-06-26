@@ -27,13 +27,11 @@ else
 
 {
 if (y>z)
-
    {
     document.write(y+" is the largest number.");
    }
 
 else
-
    {
     document.write(z+" is the largest number.");
    }
