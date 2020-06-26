@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palindrome</title>
+<script type='text/javascript'>
+
+function palindrome(m) 
+{    
+var x= m.length;
+for (var i = 0; i<x/2;i++) 
+{
+if (m.charAt(i) != m.charAt(x - 1 - i)) 
+{
+return false;
+}
+}
+return true;
+}
+var m=prompt("Enter a word to see if it is a palindrome","")
+if (palindrome(m)) 
+{
+alert("The word is a palindrome");
+} 
+else 
+{
+alert("The word is not a palindrome");
+}
+</script>
+
+</body>
+</html>
+</head>
