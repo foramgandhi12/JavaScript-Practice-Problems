@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Divisible by 13?</title>
+
+<script>
+
+function getrandomnumber(min,max,notin)
+{
+  return min+Math.floor((max-min+1)*Math.random());
+}
+
+function divisibleby13(m)
+{
+   var str=m.toString();
+   var lastdigit;
+   var num;
+   num=m;
+
+   while(num>=100)
+    {
+     lastdigit=4*parseInt(str.substring(str.length-1));
+     str=str.substring(0,str.length-1);
+     num=parseInt(str);
+     num=num+lastdigit;
+     str=num.toString();
+    }
+    
+    return (num%13==0)
+}
+
+document.write("<h1><center>Solve the following word problems:</h1></center>");
+
+function questions(num)
+{
+  for (var i=1; i<=num; i++)
+    {
+      var z=getrandomnumber(100,200);
+      var str="Is "+z+" divisible by 13? ("+divisibleby13(z)+")";
+      document.write(i+") "+str+"<br><br>");
+    }
+}
+
+questions(5);
+
+</script>
+
+</body>
+</html>
+</head>
